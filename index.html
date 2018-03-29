@@ -4,111 +4,183 @@
   <meta charset="utf-8">
   <title>Volunteer Sign-up</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link href="css/type.css" rel="stylesheet">
-  <link href="css/grid.css" rel="stylesheet">
   <link href="css/modules.css" rel="stylesheet">
+  <link href="css/grid.css" rel="stylesheet">
+  <link href="css/type.css" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Noto+Serif" rel="stylesheet">
 </head>
 <body>
-  <section>
+  <header>
+    <h1>Apply to be a tree planter</h1>
+    <p>Trees are one of the world’s most precious renewable resources—we need your help to renew the ecosystem.</p>
+  </header>
+  <form action="post">
+    <fieldset>
+      <legend>Personal details</legend>
+      <div>
+        <label for="name">Full name</label>
+        <input id="name" required>
+        <p>Your full legal name, for insurance purposes, e.g. “Elizabeth Bradley”.</p>
+      </div>
+      <div>
+        <label for="nickname">What should we call you?</label>
+        <input id="nickname">
+        <p>What all your friends call you, e.g. “Liz”.</p>
+      </div>
+      <div>
+        <label for="birthdate">Date of birth</label>
+        <input id="birthdate" type="date">
+      </div>
+      <div>
+        <label for="tshirtsize">T-shirt size</label>
+        <select id="tshirtsize" name="Select a t-shirt size">
+          <option value="">Select a t-shirt size</option>
+          <option>Fitted: XS</option>
+          <option>Fitted: S</option>
+          <option>Fitted: M</option>
+          <option>Fitted: L</option>
+          <option>Fitted: XL</option>
+          <option>Straight-cut: XS</option>
+          <option>Straight-cut: S</option>
+          <option>Straight-cut: M</option>
+          <option>Straight-cut: L</option>
+          <option>Straight-cut: XL</option>
+        </select>
+      </div>
+      <div>
+        <label for="email">Email</label>
+        <input id="email" type="email">
+      </div>
+      <div>
+        <label for="phonenumber">Phone number (optional)</label>
+        <input id="phonenumber" type="tel">
+      </div>
+    </fieldset>
+    <fieldset>
+      <legend>Address</legend>
+      <div>
+        <label for="streetaddress">Street address</label>
+        <input id="streetaddress">
+      </div>
+      <div>
+        <label for="city">City</label>
+        <input id="city">
+      </div>
+      <div>
+        <label for="province">Province</label>
+        <select id="province" name="Select a province">
+          <option value="">Select a province</option>
+          <option>Alberta</option>
+          <option>British Columbia</option>
+          <option>Manitoba</option>
+          <option>New Brunswick</option>
+          <option>Newfoundland & Labrador</option>
+          <option>Northwest Territories</option>
+          <option>Nova Scotia</option>
+          <option>Nunavut</option>
+          <option>Ontario</option>
+          <option>Prince Edward Island</option>
+          <option>Québec</option>
+          <option>Saskatchewan</option>
+          <option>Yukon</option>
+        </select>
+      </div>
+      <div>
+        <label for="postalcode">Postal code</label>
+        <input id="postalcode">
+      </div>
+    </fieldset>
+    <fieldset>
+      <legend>What activities are you interested in helping with?</legend>
+      <input id="digging" type="checkbox">
+      <label for="digging">Digging holes</label>
+
+      <input id="dirty" type="checkbox">
+      <label for="dirty">Getting dirty</label>
+
+      <input id="lifting" type="checkbox">
+      <label for="lifting">Lifting heavy objects</label>
+
+      <input id="driving" type="checkbox">
+      <label for="driving">Driving people</label>
+
+      <input id="trees" type="checkbox">
+      <label for="trees">Transporting trees</label>
+
+      <input id="photos" type="checkbox">
+      <label for="photos">Taking photos</label>
+
+      <input id="online" type="checkbox">
+      <label for="online">Online publishing</label>
+
+      <input id="people" type="checkbox">
+      <label for="people">Managing people</label>
+    </fieldset>
+    <fieldset>
+      <legend>Do you have any experience with the following?</legend>
+      <input id="shovels" type="checkbox">
+      <label for="shovels">Shovels</label>
+
+      <input id="gps" type="checkbox">
+      <label for="gps">Hand-held GPS</label>
+
+      <input id="blogging" type="checkbox">
+      <label for="blogging">Writing & blogging</label>
+
+      <input id="photography" type="checkbox">
+      <label for="photography">Photography</label>
+
+      <input id="climbing" type="checkbox">
+      <label for="climbing">Trail & hill climbing</label>
+
+      <input id="craft" type="checkbox">
+      <label for="craft">Bush craft</label>
+
+      <input id="atvs" type="checkbox">
+      <label for="atvs">ATVs</label>
+
+      <input id="plant" type="checkbox">
+      <label for="plant">Plant identification</label>
+
+      <input id="event" type="checkbox">
+      <label for="event">Special event planning</label>
+
+      <input id="speaking" type="checkbox">
+      <label for="speaking">Speaking to groups</label>
+    </fieldset>
     <div>
-      <h1>Apply to be a tree planter</h1>
-      <p>Trees are one of the world’s most precious renewable resources—we need your help to renew the ecosystem.</p>
-      <form>
-      </form>
+      <fieldset>
+        <legend>Do you have a valid driver’s license?</legend>
+        <input id="yes-valid-license" type="radio" name="license">
+        <label for="yes-valid-license">Yes</label>
+        <input id="no-valid-license" type="radio" name="license">
+        <label for="no-valid-license">No</label>
+      </fieldset>
+      <fieldset>
+        <legend>Do you have a pick-up truck you’d be willing to use?</legend>
+        <input id="yes-pick-up-truck" type="radio" name="pick-up">
+        <label for="yes-pick-up-truck">Yes</label>
+        <input id="no-pick-up-truck" type="radio" name="pick-up">
+        <label for="no-pick-up-truck">No</label>
+      </fieldset>
+      <fieldset>
+        <legend>Do you have up-to-date first-aid certification?</legend>
+        <input id="yes-first-aid" type="radio" name="first-aid">
+        <label for="yes-first-aid">Yes</label>
+        <input id="no-first-aid" type="radio" name="first-aid">
+        <label for="no-first-aid">No</label>
+      </fieldset>
     </div>
-  </section>
+    <div>
+      <label for="comments">Please let us know any comments or questions you may have.</label>
+      <textarea id="comments"></textarea>
+    </div>
+    <div>
+      <button class="btn" type="submit">Apply</button>
+    </div>
+  </form>
+  <footer>© Tree Hugger International Organization</footer>
+
 </body>
 </html>
-
-
-
-
-
-Personal details
-
-Full name
-Your full legal name, for insurance purposes, e.g. “Elizabeth Bradley”.
-
-What should we call you?
-What all your friends call you, e.g. “Liz”.
-
-Date of birth
-
-T-shirt size
-- Select a t-shirt size
-- Fitted: XS
-- Fitted: S
-- Fitted: M
-- Fitted: L
-- Fitted: XL
-- Straight-cut: XS
-- Straight-cut: S
-- Straight-cut: M
-- Straight-cut: L
-- Straight-cut: XL
-
-Email
-Phone number (optional)
-
-Address
-Street address
-City
-Postal code
-
-Province
-- Select a province
-- Alberta
-- British Columbia
-- Manitoba
-- New Brunswick
-- Newfoundland & Labrador
-- Northwest Territories
-- Nova Scotia
-- Nunavut
-- Ontario
-- Prince Edward Island
-- Québec
-- Saskatchewan
-- Yukon
-
-What activities are you interested in helping with?
-- Digging holes
-- Getting dirty
-- Lifting heavy objects
-- Driving people
-- Transporting trees
-- Taking photos
-- Online publishing
-- Managing people
-
-Do you have any experience with the following?
-- Shovels
-- Hand-held GPS
-- Writing & blogging
-- Photography
-- Trail & hill climbing
-- Bush craft
-- ATVs
-- Plant identification
-- Special event planning
-- Speaking to groups
-
-Do you have a valid driver’s license?
-- Yes
-- No
-
-Do you have a pick-up truck you’d be willing to use?
-- Yes
-- No
-
-Do you have up-to-date first-aid certification?
-- Yes
-- No
-
-Please let us know any comments or questions you may have.
-
-Apply
-
-© Tree Hugger International Organization

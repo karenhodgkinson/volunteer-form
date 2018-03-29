@@ -1,14 +1,15 @@
 html {
   background-color: #70ad55;
-  font-family: 'Noto Serif', serif;
+  font-family: "Noto Serif", serif;
   color: #fff;
-  }
+}
 
 form {
   background-color: #fff;
+  color: black;
 }
 
 .btn {
-  background-color: ##6e8c62;
+  background-color: #6e8c62;
   color: #fff;
-  }
+}
